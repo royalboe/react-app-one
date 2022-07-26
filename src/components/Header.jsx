@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Photo from '../assets/PwC.jpeg'
+import Photo from "../assets/pwc.jpeg";
 
 function Header() {
   return (
@@ -12,12 +12,12 @@ function Header() {
         <h3>PwC Career Website</h3>
       </div>
       <div>
-        <Link to="/home">Home</Link>
-        <Link to="/contactUs">Contact Us</Link>
-        <Link to="/gallery">Gallery</Link>
-        <Link to="/applicationForm">Application Form</Link>
-        <Link to="/aboutUs">About Us</Link>
-        <Link to="/studentsData">Students Data</Link>
+        <Link to="/Home">Home</Link>
+        <Link to="/ContactUs">Contact Us</Link>
+        <Link to="/Gallery">Gallery</Link>
+        <Link to="/ApplicationForm">Application Form</Link>
+        <Link to="/AboutUs">About Us</Link>
+        <Link to="/StudentsData">Students Data</Link>
       </div>
     </header>
   );
