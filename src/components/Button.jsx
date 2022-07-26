@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Button = ({ text, color }) => {
+const Button = ({ text, color, count, setCount }) => {
   return (
     <div>
-      <button style={{ backgroundColor: color }}>{text}</button>
+      <button
+        onClick={() => setCount(count + 1)}
+        style={{ backgroundColor: color }}
+      >
+        {text}
+      </button>
     </div>
   );
 };

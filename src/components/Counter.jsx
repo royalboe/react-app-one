@@ -15,7 +15,7 @@ const Counter = () => {
       </button>
       <br></br>
       <button onClick={() => setCount(0)}>Click me to reset</button>
-      <Button text="Like me" color="red" />
+      <Button text="Like me" color="red" count={count} setCount={setCount} />
       <Button text="Like me" color="green" />
     </div>
   );
