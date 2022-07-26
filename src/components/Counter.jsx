@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Button from "./Button";
 
 const Counter = () => {
   const [count, setCount] = useState(0);
@@ -12,7 +13,10 @@ const Counter = () => {
       <button onClick={() => setCount(count - 1)}>
         Click me to decrease one
       </button>
+      <br></br>
       <button onClick={() => setCount(0)}>Click me to reset</button>
+      <Button text="Like me" color="red" />
+      <Button text="Like me" color="green" />
     </div>
   );
 };
