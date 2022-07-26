@@ -23,6 +23,7 @@ function Header() {
         <Link to="/ApplicationForm">Application Form</Link>
         <Link to="/AboutUs">About Us</Link>
         <Link to="/StudentsData">Students Data</Link>
+        <Link to="/RecruitmentForm">Recruitment Form</Link>
       </div>
     </header>
   );
