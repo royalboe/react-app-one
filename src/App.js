@@ -24,6 +24,7 @@ import AboutUs from "./pages/AboutUs";
 import ApplicationForm from "./pages/ApplicationForm";
 import ContactUs from "./pages/ContactUs";
 import RecruitmentForm from "./pages/RecruitmentForm";
+import Posts from "./pages/Posts";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route path={"/ContactUs"} element={<ContactUs />} />
           <Route path={"/ApplicationForm"} element={<ApplicationForm />} />
           <Route path={"/RecruitmentForm"} element={<RecruitmentForm />} />
+          <Route path={"/Posts"} element={<Posts />} />
         </Routes>
         <Footer />
       </BrowserRouter>

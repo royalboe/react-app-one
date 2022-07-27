@@ -24,6 +24,7 @@ function Header() {
         <Link to="/AboutUs">About Us</Link>
         <Link to="/StudentsData">Students Data</Link>
         <Link to="/RecruitmentForm">Recruitment Form</Link>
+        <Link to="/Posts">Posts</Link>
       </div>
     </header>
   );
