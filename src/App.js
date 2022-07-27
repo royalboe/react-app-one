@@ -27,6 +27,7 @@ import RecruitmentForm from "./pages/RecruitmentForm";
 import Posts from "./pages/Posts";
 import Todos from "./pages/Todo";
 import Users from "./pages/Users";
+import LoginForm from "./pages/LoginForm";
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
           <Route path={"/Posts"} element={<Posts />} />
           <Route path={"/Users"} element={<Users />} />
           <Route path={"/Todos"} element={<Todos />} />
+          <Route path={"/LoginForm"} element={<LoginForm />} />
         </Routes>
         <Footer />
       </BrowserRouter>

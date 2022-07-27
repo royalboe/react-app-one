@@ -27,15 +27,28 @@ const Posts = () => {
     return (
       <div>
         <h1>These are my posts</h1>
-        {posts &&
-          posts.map((post, index) => {
-            return (
-              <div>
-                <h3 key={post.id}>{`Title: ${post.title}`}</h3>
-                <p>{`Body: ${post.body}`}</p>
-              </div>
-            );
-          })}
+        <table>
+          <thead>
+            <tr>
+              <td>User Id</td>
+              <td>Title</td>
+              <td>Body</td>
+            </tr>
+          </thead>
+          <tbody>
+            {posts &&
+              posts.map((post, index) => {
+                return (
+                  <tr key={post.id}>
+                    <td>{post.userId}</td>
+                    <td>{post.title}</td>
+                    <td>{post.body}</td>
+                  </tr>
+                );
+              })}
+            ;
+          </tbody>
+        </table>
       </div>
     );
 };

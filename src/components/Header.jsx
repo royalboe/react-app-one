@@ -27,6 +27,7 @@ function Header() {
         <Link to="/Posts">Posts</Link>
         <Link to="/Users">Users</Link>
         <Link to="/Todos">Todos</Link>
+        <Link to="/LoginForm">Login Form</Link>
       </div>
     </header>
   );
