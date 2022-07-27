@@ -3,11 +3,20 @@ import React, { useState, useEffect } from "react";
 const Todos = () => {
   const [todos, setTodos] = useState([]);
 
+  //   useEffect(() => {
+  //     fetch("https://jsonplaceholder.typicode.com/todos")
+  //       .then((res) => res.json())
+  //       .then((todos) => setTodos(todos));
+  //   }, []);
+
+  const fetchPosts = async () => {
+    let todos = await fetch("https://jsonplaceholder.typicode.com/todos");
+    todos = await todos.json();
+    setTodos(todos);
+  };
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/todos")
-      .then((res) => res.json())
-      .then((todos) => setTodos(todos));
-  }, []);
+    fetchPosts();
+  }, [todos]); // useEffect second parameter is used to track changes in state and rerun
   return (
     <div>
       <h1>These are my todos</h1>
@@ -22,6 +31,6 @@ const Todos = () => {
         })}
     </div>
   );
-};
+};;
 
 export default Todos;

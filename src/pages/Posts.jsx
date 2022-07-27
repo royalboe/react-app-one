@@ -3,11 +3,21 @@ import React, { useState, useEffect } from "react";
 const Posts = () => {
   const [posts, setPosts] = useState([]);
 
+  //   useEffect(() => {
+  //     fetch("https://jsonplaceholder.typicode.com/posts")
+  //       .then((res) => res.json())
+  //       .then((posts) => setPosts(posts));
+  //   }, []);
+
+  const fetchPosts = async () => {
+    let posts = await fetch("https://jsonplaceholder.typicode.com/posts");
+    const data = await posts.json();
+    setPosts(data);
+  };
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/posts")
-      .then((res) => res.json())
-      .then((posts) => setPosts(posts));
-  }, []);
+    fetchPosts();
+  }, [posts]); // useEffect second parameter is used to track changes in state and rerun
+
   return (
     <div>
       <h1>These are my posts</h1>

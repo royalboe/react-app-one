@@ -3,11 +3,21 @@ import React, { useState, useEffect } from "react";
 const Users = () => {
   const [users, setUsers] = useState([]);
 
+  //   useEffect(() => {
+  //     fetch("https://jsonplaceholder.typicode.com/users")
+  //       .then((res) => res.json())
+  //       .then((users) => setUsers(users));
+  //   }, []);
+
+  const fetchPosts = async () => {
+    let users = await fetch("https://jsonplaceholder.typicode.com/users");
+    users = await users.json();
+    setUsers(users);
+  };
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users")
-      .then((res) => res.json())
-      .then((users) => setUsers(users));
-  }, []);
+    fetchPosts();
+  }, [users]); // useEffect second parameter is used to track changes in state and rerun
+
   return (
     <div>
       <h1>These are my users</h1>
@@ -49,6 +59,6 @@ const Users = () => {
       </table>
     </div>
   );
-};
+};;
 
 export default Users;
