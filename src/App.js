@@ -25,6 +25,8 @@ import ApplicationForm from "./pages/ApplicationForm";
 import ContactUs from "./pages/ContactUs";
 import RecruitmentForm from "./pages/RecruitmentForm";
 import Posts from "./pages/Posts";
+import Todos from "./pages/Todo";
+import Users from "./pages/Users";
 
 function App() {
   return (
@@ -40,6 +42,8 @@ function App() {
           <Route path={"/ApplicationForm"} element={<ApplicationForm />} />
           <Route path={"/RecruitmentForm"} element={<RecruitmentForm />} />
           <Route path={"/Posts"} element={<Posts />} />
+          <Route path={"/Users"} element={<Users />} />
+          <Route path={"/Todos"} element={<Todos />} />
         </Routes>
         <Footer />
       </BrowserRouter>
