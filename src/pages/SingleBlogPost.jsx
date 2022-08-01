@@ -22,7 +22,7 @@ const SingleBlogPost = () => {
     <section style={title} className="container">
       <h2>PwC Blog Post</h2>
       <div className="postbody">
-        <p>fbrenogepmtiotnvbglrgnmlmremr',.fr;lmfdkln fvkjlvn</p>
+        <p></p>
       </div>
     </section>
   );
