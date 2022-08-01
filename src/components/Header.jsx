@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Photo from "../assets/pwc.jpeg";
-import Counter from "./Counter";
+// import Counter from "./Counter";
 
 function Header() {
   return (
@@ -14,7 +14,7 @@ function Header() {
       </div>
       <div>
         {" "}
-        <Counter />
+     {/* <Counter /> */}
       </div>
       <div>
         <Link to="/Home">Home</Link>
@@ -28,6 +28,8 @@ function Header() {
         <Link to="/Users">Users</Link>
         <Link to="/Todos">Todos</Link>
         <Link to="/LoginForm">Login Form</Link>
+        <Link to="/SingleBlogPost">Blog Post</Link>
+        <Link to="/Conditionals">Conditionals</Link>
       </div>
     </header>
   );
