@@ -12,10 +12,7 @@ function Header() {
       <div>
         <h3>PwC Career Website</h3>
       </div>
-      <div>
-        {" "}
-     {/* <Counter /> */}
-      </div>
+      <div> {/* <Counter /> */}</div>
       <div>
         <Link to="/Home">Home</Link>
         <Link to="/ContactUs">Contact Us</Link>
@@ -30,6 +27,7 @@ function Header() {
         <Link to="/LoginForm">Login Form</Link>
         <Link to="/SingleBlogPost">Blog Post</Link>
         <Link to="/Conditionals">Conditionals</Link>
+        <Link to="/RecruitmentFormTwo">RecruitmentFormTwo</Link>
       </div>
     </header>
   );
