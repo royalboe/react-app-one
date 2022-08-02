@@ -20,6 +20,7 @@ const RecruitmentFormTwo = () => {
       event.preventDefault();
       validateInput(inputValue);
       setErrorCheck(validateInput(inputValue));
+      localStorage.setItem("storageValue", JSON.stringify(inputValue))
     }
 
     function validateInput(values) {
