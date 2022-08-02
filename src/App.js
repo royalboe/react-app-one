@@ -28,6 +28,10 @@ import Posts from "./pages/Posts";
 import Todos from "./pages/Todo";
 import Users from "./pages/Users";
 import LoginForm from "./pages/LoginForm";
+import SingleBlogPost from "./pages/SingleBlogPost";
+import Conditionals from "./pages/Conditionals";
+import RecruitmentFormTwo from "./pages/RecruitmentFormTwo";
+import MyProfile from "./pages/MyProfile";
 
 function App() {
   return (
@@ -46,7 +50,14 @@ function App() {
           <Route path={"/Users"} element={<Users />} />
           <Route path={"/Todos"} element={<Todos />} />
           <Route path={"/LoginForm"} element={<LoginForm />} />
+          <Route path={"/SingleBlogPost"} element={<SingleBlogPost />} />
+          <Route path={"/Conditionals"} element={<Conditionals />} />
+          <Route
+            path={"/RecruitmentFormTwo"}
+            element={<RecruitmentFormTwo />}
+          />
         </Routes>
+        <Route path={"/MyProfile"} element={<MyProfile />} />
         <Footer />
       </BrowserRouter>
     </div>
