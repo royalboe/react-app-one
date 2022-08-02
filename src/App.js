@@ -31,6 +31,7 @@ import LoginForm from "./pages/LoginForm";
 import SingleBlogPost from "./pages/SingleBlogPost";
 import Conditionals from "./pages/Conditionals";
 import RecruitmentFormTwo from "./pages/RecruitmentFormTwo";
+import MyProfile from "./pages/MyProfile";
 
 function App() {
   return (
@@ -56,6 +57,7 @@ function App() {
             element={<RecruitmentFormTwo />}
           />
         </Routes>
+        <Route path={"/MyProfile"} element={<MyProfile />} />
         <Footer />
       </BrowserRouter>
     </div>

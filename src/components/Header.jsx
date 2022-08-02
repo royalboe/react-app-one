@@ -28,6 +28,7 @@ function Header() {
         <Link to="/SingleBlogPost">Blog Post</Link>
         <Link to="/Conditionals">Conditionals</Link>
         <Link to="/RecruitmentFormTwo">RecruitmentFormTwo</Link>
+        <Link to="/MyProfile">Profile</Link>
       </div>
     </header>
   );
