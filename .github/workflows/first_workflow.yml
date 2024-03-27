@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Create file
-        run: echo "first workflow" > worklow.txt
+        run: echo "first workflow" > workflow.txt
       - name: Read contents
         run: cat workflow.txt
       - name: Multi Line
