@@ -1,0 +1,16 @@
+name: First WorkFlow
+on: workflow_dispatch
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create file
+        run: echo "first workflow" > worklow.txt
+      - name: Read contents
+        run: cat workflow.txt
+      - name: Multi Line
+        run: |
+          echo first line > multiline.txt
+          echo second line >> multiline.txt
+          echo thrid line >> multiline.txt
+          cat multiline.txt
