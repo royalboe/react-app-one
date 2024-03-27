@@ -1,7 +1,7 @@
 name: First WorkFlow
-on: workflow_dispatch
+on: [push, workflow_dispatch]
 jobs:
-  first_job:
+  Install and Test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -16,3 +16,13 @@ jobs:
           echo second line >> multiline.txt
           echo thrid line >> multiline.txt
           cat multiline.txt
+  Deploy:
+    needs: Install and Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: action/checkout@v4
+      - name: Install dependencies
+        runs: npm ci
+      - name: Deploy
+        run: echo "Deploying..."
