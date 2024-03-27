@@ -4,10 +4,12 @@ jobs:
   first_job:
     runs-on: ubuntu-latest
     steps:
-      - name: Create file
-        run: echo "first workflow" > workflow.txt
-      - name: Read contents
-        run: cat workflow.txt
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install dependencies
+        run: npm ci
+      - name: Test
+        run: npm test
       - name: Multi Line
         run: |
           echo first line > multiline.txt
